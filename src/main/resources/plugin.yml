@@ -1,0 +1,17 @@
+name: Permadeath
+version: 1.0.0
+main: es.cirue.permadeath.Main
+api-version: '1.20'
+author: Cirue
+description: A fully configurable lives and revival system.
+
+commands:
+  permadeath:
+    description: Manage lives and open the revival menu.
+    usage: /permadeath <revive|reload>
+    aliases: [pd]
+
+permissions:
+  permadeath.admin:
+    description: Allows reloading the Permadeath configuration.
+    default: op

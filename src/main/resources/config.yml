@@ -1,0 +1,36 @@
+# Number of diamonds required to restore one life.
+revive-cost: 20
+
+# Lives assigned to a new player or a player without a data.yml entry.
+max-lives: 3
+
+# Whether a player reaching zero lives is banned.
+elimination:
+  ban: true
+  kick: true
+  ban-reason: '&4You have been eliminated from the game.'
+
+gui:
+  title: '&8Available Revivals'
+  player-name: '&c{player}'
+  player-lore:
+    - '&7Lives: &f{lives}'
+    - ''
+    - '&eClick to restore one life'
+    - '&7Cost: &b{cost} diamonds'
+  empty-name: '&cNo Eliminated Players'
+  empty-lore:
+    - '&7All players still have lives.'
+
+messages:
+  no-permission: '&cYou do not have permission to do that.'
+  player-only: '&cThis command can only be executed by a player.'
+  usage: '&eUsage: &f/permadeath <revive|reload>'
+  config-reloaded: '&aConfiguration reloaded successfully.'
+  no-eliminated: '&eThere are no eliminated players to revive.'
+  not-enough-diamonds: '&cYou need &b{cost} diamonds &cto revive someone.'
+  revive-success: '&aYou revived &f{player} &awith &f1 life&a.'
+  revived-notification: '&aYou were revived by &f{reviver}&a. Welcome back!'
+  death: '&cYou died. You have &f{lives} &clives remaining.'
+  eliminated: '&4You have lost all your lives and have been eliminated.'
+  error: '&cThe revival could not be completed. Please try again.'
